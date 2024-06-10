@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font);
-  font-variation-settings: var(--main-font-weight);
+  font-variation-settings: "wght" var(--main-font-weight);
   color: var(--text-color);
   background-size: cover;
   background: repeating-linear-gradient(
@@ -129,13 +129,11 @@
   width: 100%;
 }
 .theme-menu__item {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   display: block;
 }
 .card__title {
-  font-variation-settings: var(--title-font-weight);
+  font-variation-settings: "wght" var(--title-font-weight);
   font-size: 18px;
   line-height: 22px;
   padding: 4px 10px;
