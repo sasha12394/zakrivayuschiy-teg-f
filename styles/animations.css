@@ -27,16 +27,18 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: heart 0.3s ease-in 0.1s alternate;
+  animation: scale 0.3s ease-in 0.1s alternate;
+  transform-origin: center;
 }
-@keyframes heart {
+@keyframes scale {
   0% {
     scale: 1;
   }
   100% {
-    scale: 1, 5;
+    scale: 1.5;
   }
 }
+
 .like-icon.is-liked .sparks {
   animation: sparks 0.3s ease-in 0.3s alternate;
 }

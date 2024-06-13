@@ -28,3 +28,33 @@
   --shadow-lable: var(--main-bg-color);
   --mix-blend-color: var(--text-color);
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-font-weight: "wght" 400;
+    --title-font-weight: "wght" 700;
+    --text-color: #000;
+    --accent-color: rgb(from var(--text-color) r g b / 0.6);
+    --main-bg-color: #fff;
+    --bg-color: #d3d3d3;
+    --bg-color-start: #e7e7e7;
+    --bg-color-end: #1a1a1a;
+    --shadow-lable: #fff;
+    --mix-blend-color: var(--main-bg-color);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-font-weight: "wght" 465;
+    --title-font-weight: "wght" 785;
+    --text-color: #00cc14;
+    --accent-color: rgb(from var(--text-color) r g b / 0.6);
+    --main-bg-color: #000;
+    --bg-color: var(--main-bg-color);
+    --bg-color-start: #007f0c;
+    --bg-color-end: #004306;
+    --shadow-lable: var(--main-bg-color);
+    --mix-blend-color: var(--text-color);
+  }
+}
