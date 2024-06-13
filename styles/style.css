@@ -20,8 +20,6 @@
   font-family: var(--main-font);
   font-variation-settings: "wght" var(--main-font-weight);
   color: var(--text-color);
-  background-size: cover;
-  background-attachment: fixed;
   background: repeating-linear-gradient(
       90deg,
       var(--bg-color) 0 2px,
@@ -33,6 +31,8 @@
       transparent 2px 4px
     ),
     linear-gradient(180deg, var(--bg-color-start) 0.01%, var(--bg-color-end));
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .decor {
@@ -180,17 +180,14 @@
   top: 25px;
   text-shadow: 1px 1px 0 var(--shadow-lable);
   opacity: 0.5;
+  z-index: 2;
 }
 
 .card__text__block {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 27px;
   padding: 25px 26px;
-}
-
-.card__text__block p:nth-child(2) {
-  padding: 3.5px 0 0 0;
 }
 
 .card__text {
@@ -205,6 +202,7 @@
   align-items: center;
   justify-content: end;
   gap: 7px;
+  padding: 1.5px 26px 25px 0;
 }
 
 .card__like-button {
@@ -441,14 +439,14 @@ dialog::backdrop {
     width: 28px;
     height: 28px;
   }
-  
-  .card__text__block p:nth-child(2) {
-    padding: 3px 0 0 0;
-  }
 
   .dialog {
-    padding: 30px 40px;
+    padding: 30px 39px;
     inline-size: 341px;
+  }
+
+  .heart__button-block {
+    padding: 1px 26px 25px 0;
   }
 }
 
